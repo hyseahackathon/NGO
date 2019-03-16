@@ -40,7 +40,7 @@
         <nav class="navbar main-nav border-less fixed-top navbar-expand-lg p-0">
             <div class="container-fluid p-0">
                 <!-- logo -->
-                <a class="navbar-brand" href="default.html">
+                <a class="navbar-brand" href="index.html">
                     <img src="images/logo2.png" alt="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,7 +49,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="index.html">
                                 Home
                                 <span>/</span>
                             </a>
@@ -62,7 +62,6 @@
                             <!-- Dropdown list -->
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="#">User</a>
-                                <a class="dropdown-item" href="#">NGO</a>
                                 <a class="dropdown-item" href="#">Organisation</a>
                             </div>
                         </li>
@@ -98,34 +97,39 @@
                             <select class="form-control main" id="type">
                                 <option value="" disabled selected>Select User Type</option>
                                 <option value="individual">Individual</option>
-                                <option value="ngo">NGO</option>
                                 <option value="organisation">Organisation</option>
                             </select>
                         </div>
                         <div class="col-md-12">
-                            <input type="text" id="name" class="form-control main" placeholder="Name">
+                            <input type="text" id="name" class="form-control main" placeholder="Name" value="{{
+          request.form.username }}">
                         </div>
                         <div class="col-md-12">
-                            <input type="email" id="email" class="form-control main" placeholder="Email">
+                            <input type="email" id="email" class="form-control main" placeholder="Email" value="{{
+          request.form.emailid }}">
                         </div>
                         <div class="col-md-12">
-                            <input type="text" id="phonenumber" class="form-control main" placeholder="Phone Number">
+                            <input type="text" id="phonenumber" class="form-control main" placeholder="Contact Number" value="{{
+          request.form.contactno }}">
                         </div>
                         <div class="form-group col-md-12">
-                            <select class="form-control main" id="city">
-                                <option>City</option>
-                                <option>Hyderabad</option>
-                                <option>Bengaluru</option>
+                            <select class="form-control main" id="city" onselect="{{
+          request.form.city }}">
+                                <option value="" disabled selected>City</option>
+                                <option value="hyderabad">Hyderabad</option>
+                                <option value="bengaluru">Bengaluru</option>
                             </select>
                         </div>
                         <div class="col-md-12">
-                            <input type="text" id="address" class="form-control main" placeholder="Full address" >
+                            <input type="text" id="address" class="form-control main" placeholder="Full address" value="{{
+          request.form.address }}">
                         </div>
                         <div class="col-md-12">
                             <input type="text" id="password" class="form-control main" placeholder="Password" >
                         </div>
                         <div class="col-md-12">
-                            <input type="text" id="confirmPassword" class="form-control main" placeholder="Confirm Password" >
+                            <input type="text" id="confirmPassword" class="form-control main" placeholder="Confirm Password" value="{{
+          request.form.password }}">
                         </div>
                         <p style="color:red" id="pwdValid"></p>
                         <script lang="javascript">
@@ -153,12 +157,16 @@
                             <button type="submit" id="submitbtn" class="btn btn-main-md" onclick="passwordCheck()">Register Now</button>
                         </div>
                     </form>
+                    {% if error %}
+                    <p class="error">
+                        <strong>Error:</strong> {{ error }}
+                        {% endif %}
                 </div>
             </div>
         </div>
     </div>
     </div>
-        <!--====  End of Google Map  ====-->
+
         <!--============================
         =            Footer            =
         =============================-->

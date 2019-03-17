@@ -1,0 +1,376 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- SITE TITTLE -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CaresBridge</title>
+
+    <!-- PLUGINS CSS STYLE -->
+    <!-- Bootstrap -->
+    <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Themefisher Font -->
+    <link href="plugins/themefisher-font/style.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="plugins/font-awsome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Magnific Popup -->
+    <link href="plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <!-- Slick Carousel -->
+    <link href="plugins/slick/slick.css" rel="stylesheet">
+    <link href="plugins/slick/slick-theme.css" rel="stylesheet">
+    <!-- CUSTOM CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- FAVICON -->
+    <link href="images/favicon.png" rel="shortcut icon">
+</head>
+<body class="body-wrapper">
+
+    <!--========================================
+    =            Navigation Section            =
+    =========================================-->
+    <nav class="navbar main-nav border-less fixed-top navbar-expand-lg p-0">
+        <div class="container-fluid p-0">
+            <!-- logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo2.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown active dropdown-slide">
+                        <a class="nav-link" href="#" data-toggle="dropdown">
+                            Home
+                            <span>/</span>
+                        </a>
+                        <!-- Dropdown list -->
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="index.html">Homepage</a>
+                            <!-- <a class="dropdown-item" href="homepage-two.html">Homepage 2</a>-->
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="speakers.html">
+                            Login
+                            <span>/</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="schedule.html">Register<span>/</span></a>
+                    </li>
+                    <li class="nav-item dropdown dropdown-slide">
+                        <a class="nav-link" href="#" data-toggle="dropdown">Know More<span>/</span></a>
+                        <!-- Dropdown list -->
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="about-us.html">About Us</a>
+                            <a class="dropdown-item" href="single-speaker.html">Single Speaker</a>
+                            <a class="dropdown-item" href="gallery.html">Gallery</a>
+                            <a class="dropdown-item" href="gallery-two.html">Gallery-02</a>
+                            <a class="dropdown-item" href="testimonial.html">Testimonial</a>
+                            <a class="dropdown-item" href="pricing.html">Pricing</a>
+                            <a class="dropdown-item" href="FAQ.html">FAQ</a>
+                            <a class="dropdown-item" href="404.html">404</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <a href="#" class="ticket">
+                    <img src="images/icon/ticket.png" alt="ticket">
+                    <span>Donate</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!--====  End of Navigation Section  ====-->
+    <!--============================
+    =            Banner            =
+    =============================-->
+    <section class="banner bg-banner-one overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Content Block -->
+                    <div class="block">
+                        <!-- Coundown Timer -->
+                        <!--<div class="timer"></div>-->
+                        <h1>Building Smiles</h1>
+                        <h2>Contribute to NGOs</h2>
+                        <h6>Serve Humanity! Feel Good</h6>
+                        <!-- Action Button -->
+                        <a href="schedule.html" class="btn btn-white-md">Book your Time now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====  End of Banner  ====-->
+    <!--===========================
+    =            About            =
+    ============================-->
+    <section class="section about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 align-self-center">
+                    <div class="image-block bg-about">
+                        <img class="img-fluid" src="images/speakers/featured-speaker.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6 align-self-center">
+                    <div class="content-block">
+                        <h2>Share your <span class="alternate">intent</span></h2>
+                        <div class="description-one">
+                            <div class="col-md-12">
+                                <textarea name="message" id="status" class="form-control main" rows="10" placeholder="How would you like to help the NGO angels?"></textarea>
+                            </div>
+                        </div>
+                        <div class="description-two">
+                            <p>Lets be a part of this wonderful oppurtunity and give a hand to make this world more beautiful and bring some smiles in this world.</p>
+                        </div>
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="#" class="btn btn-main-md">Upload</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="userStatuses.html" class="btn btn-transparent-md">Read others' status</a>
+                            </li>
+                            <li class="list-inline-item" style="padding-top:10px">
+                                <a href="#recommendations" class="btn btn-main-md">View Recommendations</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--====  End of About  ====-->
+    <!--==============================
+    =            Speakers            =
+    ===============================-->
+    <section class="section speakers bg-speaker overlay-lighter" id="recommendations">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Section Title -->
+                    <div class="section-title white">
+                        <h3>Recommended <span class="alternate">NGOs</span></h3>
+                        <p>Lets Appreciate the Good Deed!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <!-- Speaker 1 -->
+                    <div class="speaker-item">
+                        <div class="image">
+                            <img src="images/speakers/speaker-one.jpg" alt="speaker" class="img-fluid">
+                            <div class="primary-overlay"></div>
+                            <div class="socials">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="content text-center">
+                            <h5><a href="single-speaker.html">Smiles Foundation</a></h5>
+                            <p>More Details</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <!-- Speaker 2 -->
+                    <div class="speaker-item">
+                        <div class="image">
+                            <img src="images/speakers/speaker-two.jpg" alt="speaker" class="img-fluid">
+                            <div class="primary-overlay"></div>
+                            <div class="socials">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="content text-center">
+                            <h5><a href="single-speaker.html">Prem Niketan</a></h5>
+                            <p>More Details</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <!-- Speaker 3 -->
+                    <div class="speaker-item">
+                        <div class="image">
+                            <img src="images/speakers/speaker-three.jpg" alt="speaker" class="img-fluid">
+                            <div class="primary-overlay"></div>
+                            <div class="socials">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="content text-center">
+                            <h5><a href="single-speaker.html">Kala Vraksh</a></h5>
+                            <p>More Details</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <!-- Speaker 4 -->
+                    <div class="speaker-item">
+                        <div class="image">
+                            <img src="images/speakers/speaker-four.jpg" alt="speaker" class="img-fluid">
+                            <div class="primary-overlay"></div>
+                            <div class="socials">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="content text-center">
+                            <h5><a href="single-speaker.html">Sanathun</a></h5>
+                            <p>More Details</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <!-- Speaker 5 -->
+                    <div class="speaker-item">
+                        <div class="image">
+                            <img src="images/speakers/speaker-five.jpeg" alt="speaker" class="img-fluid">
+                            <div class="primary-overlay"></div>
+                            <div class="socials">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="content text-center">
+                            <h5><a href="single-speaker.html">Agresain</a></h5>
+                            <p>More Details</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <!-- Speaker 1 -->
+                    <div class="speaker-item">
+                        <div class="image">
+                            <img src="images/speakers/speaker-six.jpg" alt="speaker" class="img-fluid">
+                            <div class="primary-overlay"></div>
+                            <div class="socials">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="content text-center">
+                            <h5><a href="single-speaker.html">Grehalay</a></h5>
+                            <p>More Details</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--====  End of Speakers  ====-->
+   
+
+
+    <!--============================
+    =            Footer            =
+    =============================-->
+    <footer class="footer-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="block text-center">
+                       
+                        <ul class="social-links-footer list-inline">
+                            <li class="list-inline-item">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#"><i class="fa fa-rss"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#"><i class="fa fa-vimeo"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Subfooter -->
+    <footer class="subfooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 align-self-center">
+                    <div class="copyright-text">
+                        <p><a href="#">CaresBridge</a> &#169; 2019 All Right Reserved</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <a href="#" class="to-top"><i class="fa fa-angle-up"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPTS -->
+    <!-- jQuey -->
+    <script src="plugins/jquery/jquery.js"></script>
+    <!-- Popper js -->
+    <script src="plugins/popper/popper.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Smooth Scroll -->
+    <script src="plugins/smoothscroll/SmoothScroll.min.js"></script>
+    <!-- Isotope -->
+    <script src="plugins/isotope/mixitup.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <!-- Slick Carousel -->
+    <script src="plugins/slick/slick.min.js"></script>
+    <!-- SyoTimer -->
+    <script src="plugins/syotimer/jquery.syotimer.min.js"></script>
+    <!-- Google Mapl -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC72vZw-6tGqFyRhhg5CkF2fqfILn2Tsw"></script>
+    <script type="text/javascript" src="plugins/google-map/gmap.js"></script>
+    <!-- Custom Script -->
+    <script src="js/custom.js"></script>
+</body>
+</html>
+
